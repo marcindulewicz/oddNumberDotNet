@@ -16,9 +16,10 @@ namespace OddOrNotNumber
                 Console.WriteLine("Podaj dowolną liczbę");
                 var numberTocheck = CheckIsNumber();
 
-
-
-
+                if (numberTocheck%2 == 0)
+                    Console.WriteLine("Podana liczba jest parzysta");
+                else
+                    Console.WriteLine("Podana liczba jest parzysta");
 
 
 
