@@ -19,7 +19,7 @@ namespace OddOrNotNumber
                 if (numberTocheck%2 == 0)
                     Console.WriteLine("Podana liczba jest parzysta");
                 else
-                    Console.WriteLine("Podana liczba jest parzysta");
+                    Console.WriteLine("Podana liczba jest nieparzysta");
 
 
 
@@ -31,8 +31,8 @@ namespace OddOrNotNumber
         }
         private static int CheckIsNumber()
         {
-            var input = int.TryParse(Console.ReadLine(), out int result);
-            if (!input)
+            
+            if (!int.TryParse(Console.ReadLine(), out int result))
             {
                 throw new Exception("To nie jest liczba");
             }
